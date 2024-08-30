@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cool Website</title>
+    <style>
+        /* CSS styles */
+        @keyframes move {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6347; /* Orange-Red color */
+            animation: move 2s infinite;
+        }
+
+        .image-container {
+            border: 2px dashed #888;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        #uploaded-image {
+            max-width: 100%;
+            max-height: 300px;
+            animation: pulse 2s infinite; /* Adding a pulsating animation */
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Cool Website</h1>
+    </header>
+    <main>
+        <section class="animation-section">
+            <h2>Cool Animations</h2>
+            <!-- Add your cool animations here -->
+            <div class="animated-element"></div>
+        </section>
+        <section class="image-section">
+            <h2>Insert Your Image</h2>
+            <!-- Add image upload functionality here -->
+            <div class="image-container">
+                <img id="uploaded-image" src="https://pratu-project-bucket-2024.s3.ap-south-1.amazonaws.com/profile.png" alt="Uploaded Image">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Cool Website</p>
+    </footer>
+    <script>
+        // JavaScript code
+        // The JavaScript code for image upload is omitted here as it remains the same.
+        // You can keep the existing JavaScript code provided earlier.
+    </script>
+</body>
+</html>
